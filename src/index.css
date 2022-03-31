@@ -1,13 +1,516 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.container {
+  height: auto;
+  max-width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.section1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 700px (550px)[3];
+      grid-template-rows: 700px repeat(3, 550px);
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
 }
+
+.section1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.section1 h3 {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.section1 p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.section1 h6 {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.section1 .wrapText {
+  width: 70%;
+}
+
+.section1 .wrapText > * {
+  margin: 12px 0;
+}
+
+.section1 .section1TopArea {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1 / span 12;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  position: relative;
+}
+
+.section1 .section1TopArea header {
+  height: 80px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 8px;
+  left: 2px;
+  min-width: 100%;
+  font-family: Barlow;
+  padding: 0 16px;
+  font-size: 18px;
+}
+
+.section1 .section1TopArea .leftNav {
+  font-weight: 600;
+  color: white;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+.section1 .section1TopArea .rightNav {
+  width: 40%;
+}
+
+.section1 .section1TopArea .rightNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.section1 .section1TopArea .rightNav ul li {
+  margin: 4px;
+  padding: 0;
+  font-family: Fraunces;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.section1 .section1TopArea .rightNav ul li:hover {
+  color: #fe7867;
+}
+
+.section1 .section1TopArea .rightNav ul li:last-child {
+  color: #23303e;
+  background: white;
+  font-weight: 900;
+}
+
+.section1 .section1TopArea .topText {
+  position: absolute;
+  top: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.section1 .section1TopArea .topText h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 60px;
+  letter-spacing: 3px;
+}
+
+.section1 .mid1Text {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-column: 1 / span 6;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+  background-color: #f7f7f8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section1 .mid1Image {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 6;
+  grid-column: 7 / span 6;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+}
+
+.section1 .mid2Image {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-column: 1 / 7;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3 / 4;
+}
+
+.section1 .mid2Text {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 6;
+  grid-column: 7 / span 6;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3 / 4;
+  background-color: #f7f7f8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section1 .bottomWrap {
+  position: absolute;
+  top: 55%;
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+}
+
+.section1 .bottomWrap > h3 {
+  margin-bottom: 36px;
+}
+
+.section1 .bottomImage1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-column: 1 / 7;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4 / 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.section1 .bottomImage2 {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 6;
+  grid-column: 7 / 13;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4 / 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.section2 {
+  height: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f7f7f8;
+}
+
+.section2 h1 {
+  margin: 50px 0 50px 0;
+  font-size: 14px;
+  color: #a7abae;
+  letter-spacing: 2px;
+}
+
+.section2 .description {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.section2 .testimonials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section2 .testimonials .first,
+.section2 .testimonials .second,
+.section2 .testimonials .third {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 22%;
+  text-align: center;
+}
+
+.section2 .testimonials .first > div,
+.section2 .testimonials .second > div,
+.section2 .testimonials .third > div {
+  margin-bottom: 48px;
+}
+
+.section2 .thumbnail {
+  width: 50px;
+  height: 50px;
+}
+
+.section2 .thumbnail img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.section3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: 300px 250px;
+      grid-template-rows: 300px 250px;
+}
+
+.section3 img {
+  width: 100%;
+  height: 100%;
+}
+
+.section3 .image1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / span 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+}
+
+.section3 .image2 {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 3;
+  grid-column: 4 / span 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+}
+
+.section3 .image3 {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 3;
+  grid-column: 7 / span 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+}
+
+.section3 .image4 {
+  -ms-grid-column: 10;
+  -ms-grid-column-span: 3;
+  grid-column: 10 / span 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+}
+
+.section3 .base {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1 / 13;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background: #9ccec4;
+}
+
+.section3 .base .baseWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section3 h6 {
+  color: white;
+  text-align: center;
+  font-size: 36px;
+  margin: 36px 0;
+  font-family: Barlow;
+}
+
+.section3 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+}
+
+.section3 ul li {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.section3 ul li:hover {
+  color: white;
+}
+
+.section3 .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 180px;
+  margin: 68px 0;
+}
+
+.section3 .socials > div {
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: Barlow;
+  src: url(https://fonts.google.com/specimen/Barlow);
+}
+
+@font-face {
+  font-family: Fraunces;
+  src: url(https://fonts.google.com/specimen/Fraunces);
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+ol,
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li,
+ol {
+  list-style-type: none;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+}
+
+.section1 .section1TopArea .rightNav ul li:last-child {
+  cursor: pointer;
+  padding: 12px 20px;
+  border: none;
+  font-size: inherit;
+  border-radius: 24px;
+}
+/*# sourceMappingURL=index.css.map */
