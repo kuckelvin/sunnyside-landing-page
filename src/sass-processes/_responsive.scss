@@ -1,0 +1,262 @@
+@media (max-width: 874px) {
+    
+    .section1 .section1TopArea header {
+        // max-width: $DesktopWidth;
+        height: 80px;
+        // margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // min-width: 100%;
+        font-family: $Font1Family;
+        padding: 0 16px;
+        font-size: 16px;
+
+        & .leftNav {
+            font-size: 35px;
+        }
+
+        & .rightNav {
+            width: 80%;
+
+            & ul {
+                width: 25%;
+                margin-left: 15%;
+                & li {
+                    margin: 16px;
+                }
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 610px) {
+    .section1 .bottomWrap h3 {
+        margin-bottom: 4px;
+        font-size: 30px;
+    }
+
+    .section1 .bottomImage1 p {
+        width: 280px;
+        margin: 36px;
+    }
+
+    .section1 .bottomImage2 p {
+        margin: 36px;
+        width: 200px;
+    }
+
+    .section1 .section1TopArea header .rightNav ul {
+        width: 15%;
+        margin-left: 15%;
+
+        & li {
+            margin: 4px;
+        }
+    }
+
+    .section1 .section1TopArea .topText h1 {
+        font-size: 36px;
+    }
+
+    .section1 .mid1Text, .section1 .mid2Text {
+        justify-content: flex-start;
+    }
+
+    .section2 .testimonials .first > div {
+        margin-bottom: 50px;
+
+        &.thumbnail,.description {
+            margin-bottom: 64px;
+        }
+    }
+}
+
+
+@media (max-width: 499px) {
+    .container{
+        min-width: 375px;
+    }
+    .section1 .section1TopArea .rightNav {
+        display: none;
+    }
+
+    .section1 {
+        display: grid;
+        grid-template-rows: 400px 250px 300px 400px 300px 400px 400px;
+        grid-template-columns: 1fr;
+
+        grid-template-areas: 
+            "splitorange"
+            "egg"
+            "transformtext"
+            "cup"
+            "standout"
+            "apple"
+            "fullorange";
+
+        
+        & .section1TopArea {
+            grid-area: splitorange;
+
+            
+
+            & header {
+                height: 40px;
+
+                .leftNav {
+                    font-size: 24px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    margin: auto;
+
+                    & strong {
+                        font-size: 28px;
+                        font-weight: $Font1Weight;
+                    }
+
+                    & .hamburger {
+                        display: inline-block;
+                        margin: 4px 16px;
+                    }
+                }
+            }
+            
+
+            & .topText {
+                top: 70px;
+
+                & h1 {
+                    font-size: 32px;
+                    width: 70%;
+                    text-align: center;
+                    margin-bottom: 12px;
+                }
+            }
+        }
+
+        & .mid1Image {
+            grid-area: egg;
+        }
+
+        & .mid1Text {
+            grid-area: transformtext;
+        }
+    
+        & .mid2Image {
+            grid-area: cup;
+        }
+    
+        & .mid2Text {
+            grid-area: standout;
+        }
+    
+        & .bottomImage1 {
+            grid-area: apple;
+        }
+    
+        & .bottomImage2 {
+            grid-area: fullorange;
+        }
+
+        & .wrapText {
+            text-align: center;
+            width: 100%;
+            margin: 8px;
+            display: flex;
+            flex-direction: column;
+
+            & .dropdown {
+                margin-left: 35%;
+                
+
+                & .hoverDash {
+                    left: 5px;
+                    min-width: 90px;
+                    bottom: -16px;
+                }
+
+                & h6 {
+                    font-size: 12px;
+                }
+            }
+
+        }
+            
+        & .bottomImage1 p {
+            margin: 12px;
+            width: 320px;
+        }
+
+        & .bottomImage2 p {
+            margin: 12px;
+            width: 320px;
+        }
+
+    }
+
+    .section2 {
+        height: 1200px;
+
+        & h1 {
+            margin: 32px;
+        }
+
+        & .testimonials {
+            flex-direction: column;
+            height: 1200px;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 24px;
+
+            
+
+            & .first > div, .second > div, .third > div {
+                margin-bottom: 32px;
+
+                &.thumbnail {
+                    margin-bottom: 52px;
+                }
+            }
+            
+        }
+    }
+    
+    .section3 {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 200px 200px 250px;
+      
+        & img {
+          width: 100%;
+          height: 100%;
+        }
+      
+        & .image1 {
+          grid-column: 1 / span 6;
+          grid-row: 2 / 3;
+        }
+      
+        & .image2 {
+          grid-column: 1 / span 6;
+          grid-row: 1 / 2;
+        }
+      
+        & .image3 {
+          grid-column: 7 / span 6;
+          grid-row: 1 / 2;
+        }
+      
+        & .image4 {
+          grid-column: 7 / span 6;
+          grid-row: 2 / 3;
+        }
+      
+        & .base {
+          grid-row: 3 / 4;
+        }
+    }
+}

@@ -1,12 +1,14 @@
-@font-face {
-  font-family: $Font1Family;
-  src: url(https://fonts.google.com/specimen/Barlow);
-}
+// @font-face {
+//   font-family: $Font1Family;
+//   src: url(https://fonts.google.com/specimen/Barlow);
+// }
 
-@font-face {
-  font-family: $Font2Family;
-  src: url(https://fonts.google.com/specimen/Fraunces);
-}
+// @font-face {
+//   font-family: $Font2Family;
+//   src: url(https://fonts.google.com/specimen/Fraunces);
+// }
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:ital,wght@0,900;1,700&display=swap');
 
 *,
 *:before,
