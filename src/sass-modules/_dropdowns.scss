@@ -1,0 +1,45 @@
+.section1 {
+    & .dropdown {
+        position: relative;
+        display: inline-block;
+        
+        & .hoverDash {
+            position: absolute;
+            min-width: 82px;
+            height: 6px;
+            border-radius: 4px;
+            z-index: 1;
+            display: none;
+            bottom: -14px;
+            left: -2px;
+            cursor: pointer;
+
+            &.red {
+                background-color: $SoftRed; 
+            }
+    
+            &.yellow {
+                background-color: $Yellow;
+            }
+        }
+
+        
+
+        & h6 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+        }
+
+        &:hover h6 {
+            z-index: 100;
+            display: block;
+        }
+
+        &:hover .hoverDash {
+            display: inline-block;
+        }
+    }
+}
+

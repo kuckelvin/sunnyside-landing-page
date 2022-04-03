@@ -4,7 +4,7 @@ const Pinterest = () => {
   const [svgColor, setSvgColor] = useState("#2C7566")
   
   const changeColor = () => {
-        setSvgColor("#fff")
+        setSvgColor("hsl(0, 0%, 100%)")
       }
   
   const resetColor = () => {

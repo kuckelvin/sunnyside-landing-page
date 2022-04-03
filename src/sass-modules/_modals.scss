@@ -1,0 +1,73 @@
+// Mobile Modal
+
+.modalContainer {
+    position: fixed;
+    top: 75px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba($color: #000000, $alpha: 0.7);
+    z-index: 99;
+    // pointer-events: none;
+    display: flex;
+    justify-content: center;
+    // align-items: flex-start;
+
+    
+
+    & .modalWindow {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background: $White;
+        position: relative;
+        width: 330px;
+        height: 290px;
+
+        & .modalTip {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-bottom: 25px solid $White;
+            border-left: 25px solid transparent;
+            top: -25px;
+            right: 0;
+        }
+
+        
+
+        & .closeMobileModal {
+            align-self: flex-start;
+            margin: 4px;
+            color: $PhotographyTextColor;
+            cursor: pointer;
+            z-index: 100;
+
+            &:hover, :active {
+                transform: scale(1.3);
+                color: $SoftRed;
+            }
+        }
+
+        & .mobileNav ul li {
+            font-family: $Font1Family;
+            color: $VeryDarkGrayishBlue;
+            margin: 30px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:hover {
+                color: $SoftRed;
+            }
+
+            &:last-child {
+                @extend %btn;
+                color: $VeryDarkDesaturatedBlue;
+                background-color: $Yellow;
+                font-weight: $Font1Weight;
+            }
+        }
+    }
+}

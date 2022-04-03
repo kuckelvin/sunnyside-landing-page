@@ -9,7 +9,7 @@ const Section2 = () => {
       <div className="testimonials">
         <div className="first">
           <div className="thumbnail">
-            <img src={Jennie} alt="Jennie's thumbnail" />
+            <img src={Emily} alt="Jennie's thumbnail" />
           </div>
           <div className="description">
             We put our trust in Sunnyside and they delivered, making sure our
@@ -24,7 +24,7 @@ const Section2 = () => {
         </div>
         <div className="second">
           <div className="thumbnail">
-            <img src={Emily} alt="Emily's thumbnail" />
+            <img src={Thomas} alt="Emily's thumbnail" />
           </div>
           <div className="description">
             Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.
@@ -38,7 +38,7 @@ const Section2 = () => {
         </div>
         <div className="third">
           <div className="thumbnail">
-            <img src={Thomas} alt="Thomas' thumbnail" />
+            <img src={Jennie} alt="Thomas' thumbnail" />
           </div>
           <div className="description">
             Incredible end result! Our sales increased over 400% when we worked with Sunnyside.

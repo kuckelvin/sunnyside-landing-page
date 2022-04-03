@@ -3,11 +3,11 @@ import Header from "./Header"
 import ArrowDown from "../react-icons/ArrowDown"
 
 
-const Section1TopArea = () => {
+const Section1TopArea = (  {showNav, mobileNav} ) => {
   return (
     <div className="section1TopArea">
         <img src={imageHeader} alt="header" />
-        <Header />
+        <Header showNav={showNav} mobileNav={mobileNav}/>
         <div className="topText">
           <h1>WE ARE CREATIVES</h1>
           <ArrowDown />
