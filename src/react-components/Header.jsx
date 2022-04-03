@@ -1,15 +1,15 @@
 import LeftNav from "./LeftNav"
 import RightNav from "./RightNav"
 
-const Header = () => {
+const Header = ( {showNav} ) => {
   return (
         <>
           <header>
-            <LeftNav />
+            <LeftNav showNav={showNav} />
             <RightNav />
           </header>
         </>
   )
 }
-
+ 
 export default Header

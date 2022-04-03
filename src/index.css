@@ -347,7 +347,7 @@
 
 .section2 .thumbnail {
   width: 70px;
-  height: 70px;
+  height: 7 0px;
 }
 
 .section2 .thumbnail img {
@@ -695,7 +695,7 @@ html {
   .section1 .wrapText .dropdown .hoverDash {
     left: 5px;
     min-width: 90px;
-    bottom: -16px;
+    bottom: -14px;
   }
   .section1 .wrapText .dropdown h6 {
     font-size: 12px;
@@ -787,12 +787,16 @@ html {
   }
 }
 
-.section1 .section1TopArea .rightNav ul li:last-child {
+.section1 .section1TopArea .rightNav ul li:last-child, .modalContainer .modalWindow .mobileNav ul li:last-child {
   cursor: pointer;
   padding: 12px 20px;
   border: none;
   font-size: inherit;
   border-radius: 24px;
+}
+
+.hamburger {
+  cursor: pointer;
 }
 
 .section1 .dropdown {
@@ -834,5 +838,86 @@ html {
 
 .section1 .dropdown:hover .hoverDash {
   display: inline-block;
+}
+
+.modalContainer {
+  position: fixed;
+  top: 75px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modalContainer .modalWindow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+  position: relative;
+  width: 330px;
+  height: 290px;
+}
+
+.modalContainer .modalWindow .modalTip {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-bottom: 25px solid white;
+  border-left: 25px solid transparent;
+  top: -25px;
+  right: 0;
+}
+
+.modalContainer .modalWindow .closeMobileModal {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin: 4px;
+  color: #19536b;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.modalContainer .modalWindow .closeMobileModal:hover, .modalContainer .modalWindow .closeMobileModal :active {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  color: #fe7867;
+}
+
+.modalContainer .modalWindow .mobileNav ul li {
+  font-family: "Barlow", sans-serif;
+  color: #5a636c;
+  margin: 30px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.modalContainer .modalWindow .mobileNav ul li:hover {
+  color: #fe7867;
+}
+
+.modalContainer .modalWindow .mobileNav ul li:last-child {
+  color: #23303e;
+  background-color: #fad400;
+  font-weight: 600;
 }
 /*# sourceMappingURL=index.css.map */
